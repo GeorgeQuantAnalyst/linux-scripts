@@ -5,7 +5,7 @@
 #author	         :George
 #date            :20230319
 #version         :1.0.0
-#usage		       :bash app_dashboard.sh
+#usage           :bash app_dashboard.sh
 #bash_version    :5.0.17(1)-release
 #====================================================================================================================
 
