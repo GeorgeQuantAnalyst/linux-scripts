@@ -2,10 +2,10 @@
 
 #title           :desktop_install.sh
 #description     :Bash script to download and install user defined tools from Ubuntu repositories (apt-get and snap)
-#author	  :Lucka
+#author	         :Lucy
 #date            :20220217
 #version         :1.0.0
-#usage		 :bash desktop_install.sh
+#usage           :bash desktop_install.sh
 #bash_version    :5.0.17(1)-release
 #====================================================================================================================
 
@@ -44,6 +44,7 @@ sudo snap install vlc
 sudo snap install spotify
 sudo snap install p7zip-desktop
 sudo snap install skype
+sudo snap install discord
 sudo apt-get install -y virtualbox
 sudo apt-get install -y simplescreenrecorder
 sudo snap install todoist
