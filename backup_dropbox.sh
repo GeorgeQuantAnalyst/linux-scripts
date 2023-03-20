@@ -5,7 +5,7 @@
 #author	         :George
 #date            :20220217
 #version         :1.0.0
-#usage		       :bash backup_dropbox.sh
+#usage           :bash backup_dropbox.sh
 #bash_version    :5.0.17(1)-release
 #====================================================================================================================
 
