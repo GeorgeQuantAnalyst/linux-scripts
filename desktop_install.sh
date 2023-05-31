@@ -22,7 +22,7 @@ sudo apt-get install -y git
 sudo snap install htop
 sudo apt-get install -y sox
 sudo apt-get install -y ffmpeg
-sudo snap install youtube-dl
+sudo snap install yt-dlp
 sudo snap install curl
 sudo apt-get install -y pandoc
 sudo apt-get install -y texlive
@@ -31,6 +31,7 @@ sudo apt-get install -y lm-sensors
 sudo apt-get install -y translate-shell
 sudo apt-get install -y tree
 sudo apt-get install -y jq
+sudo apt-get install -y sshfs
 
 # Data analyse tools
 sudo snap install tradingview
