@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
 #title           :desktop_install.sh
-#description     :Bash script to download and install user defined tools from Ubuntu repositories (apt-get and snap)
+#description     :Bash script to download and install user defined tools from Ubuntu repositories (apt and snap)
 #author	         :Lucy
-#date            :20220217
-#version         :1.0.0
+#date            :20230702
+#version         :1.0.1
 #usage           :bash desktop_install.sh
 #bash_version    :5.0.17(1)-release
 #====================================================================================================================
@@ -15,56 +15,45 @@ echo "---------------------------------------------------------"
 echo " Start install applications from package managers"
 echo "---------------------------------------------------------"
 
+# Prepare
+sudo apt update
+sudo apt upgrade
+
 # Console tools
-sudo apt-get install -y mc
-sudo apt-get install -y vim
-sudo apt-get install -y git
+sudo apt install -y mc
+sudo apt install -y vim
+sudo apt install -y git
 sudo snap install htop
-sudo apt-get install -y sox
-sudo apt-get install -y ffmpeg
+sudo apt install -y sox
+sudo apt install -y ffmpeg
 sudo snap install yt-dlp
 sudo snap install curl
-sudo apt-get install -y pandoc
-sudo apt-get install -y texlive
-sudo apt-get install -y texlive-latex-extra
-sudo apt-get install -y lm-sensors
-sudo apt-get install -y translate-shell
-sudo apt-get install -y tree
-sudo apt-get install -y jq
-sudo apt-get install -y sshfs
-
-# Data analyse tools
-sudo snap install tradingview
-sudo snap install dbeaver-ce
-sudo apt-get install -y python3-notebook jupyter jupyter-core
-sudo apt install python3-pip
-sudo pip3 install jupyterlab
+sudo apt install -y lm-sensors
+sudo apt install -y translate-shell
+sudo apt install -y tree
+sudo apt install -y jq
+sudo apt install -y sshfs
 
 # Other tools
 sudo snap install vlc
 sudo snap install spotify
 sudo snap install p7zip-desktop
-sudo snap install skype
 sudo snap install discord
-sudo apt-get install -y virtualbox
-sudo apt-get install -y simplescreenrecorder
-sudo snap install todoist
+sudo snap install telegram-desktop
+sudo apt install -y virtualbox
+sudo apt install -y simplescreenrecorder
+sudo snap install chromium
 
-# Programming languages
-# sudo snap install openjdk
+# Market analyst tools
+sudo snap install tradingview
 
 # Programming tools
 sudo snap install code --classic
-sudo snap install pycharm-community --classic
-sudo snap install postman
+
+# Manual install
+wget "https://github.com/mucommander/mucommander/releases/download/1.2.0-1/mucommander_1.2.0-1_amd64.deb"
+wget "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb"
 
 echo "---------------------------------------------------------"
 echo " Finish install applications from package managers"
 echo "---------------------------------------------------------"
-
-echo "---------------------------------------------------------"
-echo " Urls for apps out of package managers"
-echo "---------------------------------------------------------"
-echo "https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html - vmware player"
-echo "https://www.osboxes.org/lubuntu/ - lubuntu virtual for internet"
-echo "https://www.binance.com/en/desktop-download"
