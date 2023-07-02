@@ -9,7 +9,7 @@
 #bash_version    :5.0.17(1)-release
 #====================================================================================================================
 
-echo "Desktop install version 1.0.0"
+echo "Desktop install version 1.0.1"
 
 echo "---------------------------------------------------------"
 echo " Start install applications from package managers"
